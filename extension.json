@@ -1,0 +1,20 @@
+{
+  "profile": "",
+  "vendor": "",
+  "name": "",
+  "version": "v1.0.0",
+  "architecture": "",
+  "sysVersion": "1.0.0",
+  "description": "",
+  "buildTime": "2hr",
+  "platformDependencies": {
+    "profile1":"",
+    "profile2":""
+  },
+  "extensionDependencies": [
+    {
+        "id":"profile::vendor::name",
+        "version":"v1.0.0"
+    }
+  ]
+}

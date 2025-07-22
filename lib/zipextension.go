@@ -32,8 +32,6 @@ func PackageExtension() error {
 	if err != nil {
 		if !os.IsExist(err) {
 			return fmt.Errorf("failed to create output directory: %w", err)
-		} else {
-			fmt.Println("Output directory already exists, proceeding with packaging.", err)
 		}
 	}
 	file, err := os.Open(MetadataFileName)
@@ -78,7 +76,7 @@ func PackageExtension() error {
 		return err
 	}
 
-	fmt.Printf("\n\n#ZIP file created at: %s\n", outputZipPath)
+	fmt.Printf("\n$ZIP file created at: %s\n", outputZipPath)
 	return nil
 }
 
